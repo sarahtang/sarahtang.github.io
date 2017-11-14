@@ -1,7 +1,12 @@
+h1 {
+  font-family: 'Carrois Gothic SC', sans-serif;
+  letter-spacing: 3px;
+}
+
 body {
     background-color: white;
-    font-family: 'Heebo', sans-serif;
-    font-size: 48 px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28 px;
 }
 
 
@@ -83,6 +88,7 @@ body {
 	flex-direction: row;
 }
 
+
 /* Navigation */
 @import "compass/css3";
 
@@ -106,6 +112,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
+  font-family: 'Carrois Gothic SC', sans-serif;
   display: block;
   padding: 1em;
   color: blue;
