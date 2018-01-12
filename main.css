@@ -36,6 +36,14 @@ body {
   margin: auto;
 }
 
+.image2 {
+  width: 300px;
+  height: auto;
+  left: 50%;
+  display: block;
+  margin: auto;
+}
+
 .hyperlinks {
   text-align: center;
   padding: 0px 10px;
