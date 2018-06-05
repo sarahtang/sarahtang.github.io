@@ -1,75 +1,138 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Aux</title>
+
 	<link rel="stylesheet" href="main.css">
 	<link rel="icon" type="image/png" href="icon.png">
 	<link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Open+Sans:300" rel="stylesheet">
-	<title>Aux</title>
-	<img src="pic.png" width="792" height="612" alt="">
 
-	<h1 align="middle"> AUX </h1>
+	<!-- BOOTSTRAP -->
+	<meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- BOOTSTRAP -->
+
 </head>
+
+
 <body>
-	<div id="wrapper">
-	<section id="content" class="main">
-		<!-- Preserve -->
-		<h2>UI/UX Design</h2>
+	<div class="container">
 
-		<div class="info">
-			<h4>SCOPE: redesign app for team</h4>
-			<h4>ROLE: UX thinking to UI illustrations</h4>
-			<h4>DURATION: october 2017
+		<div class="row">
+			<div class="col-md-6">
+				<h1> AUX </h1>
+				<img src="pic.png" width="792" height="612" alt="">
+				<h2>UI/UX Design</h2>
+
+				<div class="info">
+					<h4>SCOPE: redesign app for team</h4>
+					<h4>ROLE: UX thinking to UI illustrations</h4>
+					<h4>DURATION: october 2017
+				</div>
+
+				<p>Aux, a mobile app, revolutionizes how users share music by making it easy to create live collaborative playlists. It allows one to make public or private playlists where others can easily add music, creating connections and bringing users together.</p>
+			</div>
+
+			<div class="col-md-6">
+				<img class="img-responsive" src="aux/aux_hifi.png" alt="Aux">
+			</div>
+
 		</div>
 
-		<p>Aux, a mobile app, revolutionizes how users share music by making it easy to create live collaborative playlists. It allows one to make public or private playlists where others can easily add music, creating connections and bringing users together.</p>
 
-		<div class="image">
-			<img class="image" src="aux/aux_hifi.png" alt="Aux">
+		<div class="row">
+			<div class="col-md-6">
+				<h3>PROBLEMS</h3>
+				<!-- Questions, issues -->
+
+				I was responsible for Aux's redesign. Aux wanted to not only improve their UI but also add some features that required thinking about the UX. The features for the updated app were: an upvote/downvote system, Facebook integration, viewing participants, and viewing song lyrics.
+			</div>
+
+			<div class="col-md-6">
+				<h3>IDEAS</h3>
+				<!-- Solution -->
+
+				<p> Based on Aux's new logo, I decided to change the UI to have a primarily white background as an indication of something new. The first place to start was coming up with ideas for how to make the song display different and interesting. This screen is the most used screen in the app and how Aux will stand out amongst its competitors. Going through each of the features while also updating the current screens is how I approached this redesign.</p>
+
+			</div>
+
 		</div>
 
-		<h3>PROBLEMS</h3>
-		<!-- Questions, issues -->
 
-		I was responsible for Aux's redesign. Aux wanted to not only improve their UI but also add some features that required thinking about the UX. The features for the updated app were: an upvote/downvote system, Facebook integration, viewing participants, and viewing song lyrics.
+		<div class="row">
+			<div class="col-md-4">
+				<h3>PROCESS</h3>
+				<!-- Wireframes, lowfi, hifi designs -->
+				<!-- Solutions in application (visual) hifi!! -->
 
+				<p> My first step was coming up with the main song page and creating a lowfi design. I decided to go with a clean circular object for the album art with a ring around it demonstrating the time left remaining in the song. My idea was to use a color grabber to take the primary colors in the album art and use those for the pause, shuffle and like buttons to add a pop of color on the white background. </p>
 
-		<h3>IDEAS</h3>
-		<!-- Solution -->
+				<p> The next step was to address each of the features. I experimented with displaying the lyrics in two ways. One idea was to put the words on the back of the album art. However, this would require that the lyrics be constantly updated and synced to the song as the circle wouldn't be able to fit all the lyrics at once. An alternative would be to have a single pop up when tapping on the album art that showed all the lyrics at one time. This would be easier to implement.</p>
+			</div>
 
-		<p> Based on Aux's new logo, I decided to change the UI to have a primarily white background as an indication of something new. The first place to start was coming up with ideas for how to make the song display different and interesting. This screen is the most used screen in the app and how Aux will stand out amongst its competitors. Going through each of the features while also updating the current screens is how I approached this redesign.</p>
+			<div class="col-md-4">
+				<p>Instead of using an upvote/downvote system, I decided it was more positive and encouraging to have only a like system. I put hearts on each song for the user to like as well as a display on the playlist page showing how many people had liked it. In this way, the user can see the most popular songs on a playlist and contribute.</p>
+				<img class="img-responsive" src="aux/wireframe.jpg" alt="wireframe">
 
+			</div>
 
-		<h3>PROCESS</h3>
-		<!-- Wireframes, lowfi, hifi designs -->
-		<!-- Solutions in application (visual) hifi!! -->
+			<div class="col-md-4">
+				<p> The use of likes goes hand in hand with Facebook and user participation by having a page showing user profile. This page would also show your friends and the number of songs they have suggested. In further designs, I hope to elevate this idea by incorporating the number of songs liked per person, as well as song liked/suggested per person per playlist. After completing the lowfi design, I created a hifi design to show the solution in application.</p>
+				<img class="img-responsive" src="aux/hifi.png" alt="hifi">
 
-		<p> My first step was coming up with the main song page and creating a lowfi design. I decided to go with a clean circular object for the album art with a ring around it demonstrating the time left remaining in the song. My idea was to use a color grabber to take the primary colors in the album art and use those for the pause, shuffle and like buttons to add a pop of color on the white background. </p>
+			</div>
 
-		<p> The next step was to address each of the features. I experimented with displaying the lyrics in two ways. One idea was to put the words on the back of the album art. However, this would require that the lyrics be constantly updated and synced to the song as the circle wouldn't be able to fit all the lyrics at once. An alternative would be to have a single pop up when tapping on the album art that showed all the lyrics at one time. This would be easier to implement.</p>
-
-		<p>Instead of using an upvote/downvote system, I decided it was more positive and encouraging to have only a like system. I put hearts on each song for the user to like as well as a display on the playlist page showing how many people had liked it. In this way, the user can see the most popular songs on a playlist and contribute.</p>
-
-
-		<div class="image">
-			<img class="image" src="aux/wireframe.jpg" alt="wireframe">
 		</div>
 
-		<p> The use of likes goes hand in hand with Facebook and user participation by having a page showing user profile. This page would also show your friends and the number of songs they have suggested. In further designs, I hope to elevate this idea by incorporating the number of songs liked per person, as well as song liked/suggested per person per playlist. After completing the lowfi design, I created a hifi design to show the solution in application.</p>
 
-		<div class="image">
-			<img class="image" src="aux/hifi.png" alt="hifi">
-		</div>
-		
+		<div class="row">
+			<div class="col-md-8">
+				<h3>TAKEAWAYS</h3>
+				<!-- as well as other considerations -->
+				<p>At the end, I really like how this design turned out. I think a big takeaway was that previously I worked mainly with Android design and this was the first time that I did iOS design as well because Aux is cross platform. You can really tell the difference in terms of where buttons are placed (floating action button vs. an rectangular button) and having to keep in mind that Android does have a back button while iOS does not.</p>
 
-		<h3>TAKEAWAYS</h3>
-		<!-- as well as other considerations -->
-		<p>At the end, I really like how this design turned out. I think a big takeaway was that previously I worked mainly with Android design and this was the first time that I did iOS design as well because Aux is cross platform. You can really tell the difference in terms of where buttons are placed (floating action button vs. an rectangular button) and having to keep in mind that Android does have a back button while iOS does not.</p>
+				<p>I also looked at UX in terms of Nielsen Norman's 10 usability heuristics. It's important to show the user the system status so that they know what is going on. For Aux, that means having the rim around the album cover that shows how far along one is in a song. Another aspect was having an aesthetic and minimalist design which was definitely achieved with the white background and pops of color from the album art. </p>
+			</div>
 
-		<p>I also looked at UX in terms of Nielsen Norman's 10 usability heuristics. It's important to show the user the system status so that they know what is going on. For Aux, that means having the rim around the album cover that shows how far along one is in a song. Another aspect was having an aesthetic and minimalist design which was definitely achieved with the white background and pops of color from the album art. Taking these rules into consideration definitely helped clarify my UI and UX to create a functional and minimalist design.</p>
+			<div class="col-md-4">
+				<p>Taking these rules into consideration definitely helped clarify my UI and UX to create a functional and minimalist design.</p>
+			</div>
 
-	</section>
 
-</div>
+	</div>
+
 
 </body>
+
+
+<footer>
+	<div class="container">
+
+		<!-- Hyperlinks -->
+		<div class="hyperlinks">
+			<a href="index.html"> Work </a>
+			<span>
+			<a> About</a>
+			<!-- href="about.html" -->
+			</span>
+		</div>
+
+		<div class="footer">
+
+			<p align="right"> Designed and built by Sarah Tang © 2018 </p>
+		</div>
+	</div>
+</footer>
+
+
 </html>
