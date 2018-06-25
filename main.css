@@ -3,18 +3,11 @@
 --------------------------------------------------------------------*/
 
 /*USE THIS FONT*/
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+/*@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');*/
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 @import url('https://fonts.googleapis.com/css?family=Sansita|Vollkorn');
-
-
-
-
-/*@font-face {font-family: ApercuMono; src: url(fonts/apercu-mono-webfont.ttf);}
-*/
-
+@import url('https://fonts.googleapis.com/css?family=Cabin|Roboto+Condensed:700');
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif|Pacifico');
 
 body {
     background-color: white;
@@ -24,19 +17,37 @@ body {
     margin-top: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  /*font-family: 'Apercu Mono', sans-serif !important;*/
-  /*font-family: 'Noto Serif', sans-serif !important;*/
-  font-family: 'Fira Sans', sans-serif !important;
-  /*font-family: 'Vollkorn', serif !important;*/
+/*h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif !important;
   /*font-family: 'Sansita', sans-serif !important;*/
-
-}
+/*}*/
 
 h1 {
+  font-family: 'Sansita', sans-serif !important;
 }
 
 h2 {
+  font-family: 'Vollkorn', sans-serif !important;
+}
+
+h3 {
+  font-family: 'Cabin', sans-serif !important;
+}
+
+h4 {
+  font-family: 'Oswald', sans-serif !important;
+}
+
+h5 {
+  font-family: 'Sansita', sans-serif !important;
+}
+
+h6 {
+  font-family: 'Vollkorn', sans-serif !important;  
+}
+
+p {
+  font-family: 'Roboto', sans-serif !important;
 }
 
 /*--------------------------------------------------------------
@@ -67,11 +78,11 @@ h2 {
   padding-bottom: 20px;
 }
 
-.img {
+/*.img {
   display: inline-flex;
   width: 100%;
   padding-bottom: 40px;
-}
+}*/
 
 /*.img:hover {
   opacity: 0.7;
@@ -89,12 +100,12 @@ h2 {
 }
 
 .text-block h4 {
-  font-family: 'IBM Plex Mono', monospace !important;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
 }
 
 .text-block p {
-  font-family: 'IBM Plex Mono', monospace !important;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   line-height: 4px;
 }
@@ -122,7 +133,7 @@ h2 {
 
 
 /*--------------------------------------------------------------
-# responsive
+# Responsive
 --------------------------------------------------------------*/
 
 /* Extra small devices (phones, 600px and down) */
@@ -142,35 +153,3 @@ h2 {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}
-
-
-/*--------------------------------------------------------------
-# Icons
---------------------------------------------------------------*/
-/* Style all font awesome icons */
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-    opacity: 0.7;
-}
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-/* Twitter */
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
