@@ -23,6 +23,7 @@ body {
 /*}*/
 
 h1 {
+  /*I like this font - keep*/
   font-family: 'Sansita', sans-serif !important;
 }
 
@@ -31,7 +32,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Cabin', sans-serif !important;
+  font-family: 'Sansita', sans-serif !important;
 }
 
 h4 {
@@ -66,6 +67,13 @@ p {
   padding-right: 5%;
 }
 
+.intro h1 {
+  font-family: 'Vollkorn', sans-serif !important; 
+}
+
+.intro p {
+  font-family: 'Vollkorn', sans-serif !important; 
+}
 
 /*--------------------------------------------------------------
 # Work
@@ -110,6 +118,47 @@ p {
   line-height: 4px;
 }
 
+/*.text-block h4 {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 15px;
+}
+
+.text-block p {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 12px;
+  line-height: 4px;
+}*/
+
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.about h2 {
+  padding-top: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: 600;
+}
+
+.about h3 {
+  padding-top: 50px;
+  padding-right: 5%;
+}
+
+.about p {
+  line-height: 25px;
+}
+
+.about .hyperlinks {
+  text-align: right;
+  padding-top: 0px;
+}
+
 
 /*--------------------------------------------------------------
 # Footer
@@ -118,18 +167,36 @@ p {
   padding-top: 50px;
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 50px;
+}
+
+.footer p {
+  text-align: right;
+  font-size: 13px;
+  color: #939393;
+}
+
+.footer hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+
 }
 
 .hyperlinks {
-  padding-top: 50px;
-  padding-left: 5%;
+  padding-top: 20px;
+  padding-left: 0%;
   word-wrap: normal;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
 }
 
 .hyperlinks span {
   padding-left: 30px;
 }
-
 
 
 /*--------------------------------------------------------------
@@ -153,3 +220,17 @@ p {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}
+
+
+/*--------------------------------------------------------------
+# Visuals
+--------------------------------------------------------------*/
+.hr {
+  /*This creates a line*/
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
