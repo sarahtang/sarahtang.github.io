@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 @import url('https://fonts.googleapis.com/css?family=Sansita|Vollkorn');
 @import url('https://fonts.googleapis.com/css?family=Cabin|Roboto+Condensed:700');
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
 
 body {
     background-color: white;
@@ -17,21 +17,7 @@ body {
     margin-top: 0;
 }
 
-/*h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif !important;
-  /*font-family: 'Sansita', sans-serif !important;*/
-/*}*/
-
-h1 {
-  /*I like this font - keep*/
-  font-family: 'Sansita', sans-serif !important;
-}
-
-h2 {
-  font-family: 'Vollkorn', sans-serif !important;
-}
-
-h3 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Sansita', sans-serif !important;
 }
 
@@ -39,16 +25,12 @@ h4 {
   font-family: 'Oswald', sans-serif !important;
 }
 
-h5 {
-  font-family: 'Sansita', sans-serif !important;
-}
-
 h6 {
   font-family: 'Vollkorn', sans-serif !important;  
 }
 
 p {
-  /*Keep this font*/
+  Keep this font
   font-family: 'Roboto', sans-serif !important;
 }
 
@@ -126,7 +108,7 @@ p {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 /*.img {
@@ -208,7 +190,7 @@ p {
 }
 
 .about .row {
-  padding-bottom: 0px;
+  padding-bottom: 10px;
 }
 
 
