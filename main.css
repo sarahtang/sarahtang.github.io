@@ -48,7 +48,45 @@ h6 {
 }
 
 p {
+  /*Keep this font*/
   font-family: 'Roboto', sans-serif !important;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header {
+  padding-top: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 50px;
+}
+
+.header p {
+  text-align: right;
+  font-size: 13px;
+  color: #939393;
+}
+
+.header hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+
+}
+
+.hyperlinks {
+  padding-top: 20px;
+  word-wrap: normal;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+}
+
+.hyperlinks span {
+  padding-left: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -71,8 +109,13 @@ p {
   font-family: 'Vollkorn', sans-serif !important; 
 }
 
+.intro h2 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
 .intro p {
-  font-family: 'Vollkorn', sans-serif !important; 
+  font-family: 'Roboto', sans-serif !important; 
 }
 
 /*--------------------------------------------------------------
@@ -158,6 +201,44 @@ p {
   text-align: right;
   padding-top: 0px;
 }
+
+.about a {
+  font-weight: 500;
+  color: orange;
+}
+
+.about .row {
+  padding-bottom: 0px;
+}
+
+
+/*--------------------------------------------------------------
+# Preserve
+--------------------------------------------------------------*/
+
+.preserve {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.preserve p {
+  line-height: 20px;
+}
+
+.preserve span {
+  font-weight: 600;
+}
+
+.preserve hr {
+  /*This creates a line*/
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 3px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
 
 
 /*--------------------------------------------------------------
