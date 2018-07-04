@@ -102,12 +102,12 @@ p {
 #intro h2 {
   font-weight: 600;
   font-size: 40px;
-  /*color: white;*/
+  color: white;
 }
 
 #intro p {
   font-family: 'Roboto', sans-serif !important; 
-  /*color: white;*/
+  color: white;
 }
 
 /*--------------------------------------------------------------
