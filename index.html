@@ -15,20 +15,11 @@ make it clearer!!, add text blocks?-->
 <!-- 10. TO ADD (sudsy laundry) -->
 
 <!-- FIX -->
-<!-- Oswald font not being edited -->
 <!-- Make Sarah Tang click to the home screen -->
-<!-- Make images change when hovered over -->
-
 <!-- Add ecodentistry practices to illustrations page -->
 
-
-<!-- Maybe add -->
-	<!-- Venmo redesign -->
-
-<!-- Other TO DO -->
-	<!-- reformating -->
-	<!-- RESPONSIVE -->
-
+<!-- Issuing Portal content -->
+<!-- What is demo entity? What do customers supply? vs what can be toggled (change font for different items) -->
 
 
 <!DOCTYPE html>
@@ -65,18 +56,21 @@ make it clearer!!, add text blocks?-->
 </head>
 
 <body>
+	<!-- Parallax -->
+	<div class="parallax">
+	<!-- Outside container = full screen -->
 
 	<div class="container">
 
 		<!-- INTRODUCTION -->
-		<div class="intro">
+		<section id="intro">
 			<h2> Sarah Tang </h2>
 			<p> Computer Science & Conservation and Resource Studies @ UC Berkeley 
 				<br> Frontend Designer & Developer @ Trusted Key </p>
 			<a href="about.html">
 				<h5>Learn more about me.</h5>
 			</a>
-		</div> <!-- Close Intro -->
+		</section> <!-- Close Intro -->
 
 
 <!-- WORK -->
@@ -87,9 +81,9 @@ make it clearer!!, add text blocks?-->
 			<!-- Trusted Key -->
 			<div class="col-sm-6">
 				
-				<div class="img">
+				<div class="img-work">
 					<a href="TrustedKey.html">
-						<img class="img-responsive" src="trustedkey/trusted_key_redesign.png" alt="tk">
+					<img class="img-responsive" src="trustedkey/trusted_key_redesign.png" alt="tk">
 					</a>
 				</div>
 				<div class="text-block">
@@ -100,9 +94,9 @@ make it clearer!!, add text blocks?-->
 
 			<!-- TK: Axle Bank -->
 			<div class="col-sm-6">
-				<div class="img">
+				<div class="img-work">
 					<a href="AxleBank.html">
-						<img class="img-responsive" src="trustedkey/axlebank2.png" alt="axlebank">
+					<img class="img-responsive" src="trustedkey/axlebank2.png" alt="axlebank">
 					</a>
 				</div>
 				<div class="text-block">
@@ -114,13 +108,16 @@ make it clearer!!, add text blocks?-->
 
 		</div> <!-- Close Row -->
 
+		<!-- </div> Close Parallax -->
+		<!-- No Parllax ending because otherwise messes up rows -->
+
 
 		<!-- ROW 2 -->
 		<div class="row">
 
 			<!-- CTR -->
   			<div class="col-sm-4">
-				<div class="img">
+				<div class="img-work">
 					<a href="ctr.html">
 						<img class="img-responsive" src="ctr/ctr.png" alt="ctr">
 					</a>
@@ -134,7 +131,7 @@ make it clearer!!, add text blocks?-->
 			
 			<!-- Aux -->
 			<div class="col-sm-4">
-				<div class="img">
+				<div class="img-work">
 					<a href="aux.html">
 						<img class="img-responsive" src="aux/aux_hifi2.png" alt="Aux">
 					</a>
@@ -149,7 +146,7 @@ make it clearer!!, add text blocks?-->
 
 			<!-- Assassins -->
   			<div class="col-sm-4">
-				<div class="img">
+				<div class="img-work">
 					<a>
 						<img class="img-responsive" src="assassins/assassins.png" alt="assassins">
 					</a>
@@ -174,7 +171,7 @@ make it clearer!!, add text blocks?-->
 
 			<!-- PReSerVE -->
   			<div class="col-sm-6">
-				<div class="img">
+				<div class="img-work">
 					<a href="preserve.html">
 						<img class="img-responsive" src="preserve/preserve.png" alt="Preserve">
 					</a>
@@ -201,7 +198,7 @@ make it clearer!!, add text blocks?-->
 
 			<!-- MDBUILDS -->
   			<div class="col-sm-4">
-				<div class="img">
+				<div class="img-work">
 					<a>
 					<!-- <a href="mdbuilds.html"> -->
 						<img class="img-responsive" src="mdbuilds/mdb2.png" alt="mdb">
@@ -218,7 +215,7 @@ make it clearer!!, add text blocks?-->
 
 			<div class="col-sm-4">
 				<!-- Graphic Design Illustrations -->
-				<div class="img">
+				<div class="img-work">
 					<a href="mood.html"><img class="img-responsive" src="moodboard/movieposters.png" alt="food"></a>
 				</div>
 				<div class="text-block">
@@ -228,6 +225,8 @@ make it clearer!!, add text blocks?-->
 			</div>
 
 	</div> <!-- Close Container -->
+
+	</div> <!-- Close parallax -->
 
 <!-- JS -->
 <!-- https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
