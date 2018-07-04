@@ -11,7 +11,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 body {
-    background-color: white;
+    /*background-color: white;*/
     font-size: 14px;
     line-height: 18px;
     margin-left: 0;
@@ -102,12 +102,12 @@ p {
 #intro h2 {
   font-weight: 600;
   font-size: 40px;
-  color: white;
+  /*color: white;*/
 }
 
 #intro p {
   font-family: 'Roboto', sans-serif !important; 
-  color: white;
+  /*color: white;*/
 }
 
 /*--------------------------------------------------------------
