@@ -80,7 +80,7 @@
 
 		<div class="row">
 			<div class="col-sm-12">
-				<p>For 5 weeks in the fall of 2017, I was a new Android Developer in Mobile Developers of Berkeley, the premier mobile development club at UC Berkeley. During my first semester in the club, I consolidated my Android development training and worked <span>to improve how grocery shoppers keep track of their foods and expiration dates</span>.</p>
+				<p>For 5 weeks in the fall of 2017, I was a new Android Developer in Mobile Developers of Berkeley, the premier mobile development club at UC Berkeley. During my first semester in the club, I consolidated my Android development training and worked <b>to improve how grocery shoppers keep track of their foods and expiration dates</b>.</p>
 			</div>
 		</div>
 
@@ -106,7 +106,7 @@
 
 		<div class="row">
 			<div class="col-sm-12">
-				<p> At UC Berkeley, on one day, students threw away more than 450 pounds of food, the equivalent of 400 meals. Food waste is a problem: it's wasteful and resource intensive. After grocery shopping, refrigerators are crowded with food, making it difficult for students to keep track of when an item expires. <span>However, a user's experience of adding food expiration dates into a mobile app is tedious and time intensive.</span> The goal of this project was to improve this process so that users would have a more enjoyable and reliable experience inputting and managing food expiration dates. While promoting sustainability!</p>
+				<p> At UC Berkeley, on one day, students threw away more than 450 pounds of food, the equivalent of 400 meals. Food waste is a problem: it's wasteful and resource intensive. After grocery shopping, refrigerators are crowded with food, making it difficult for students to keep track of when an item expires. <b>However, a user's experience of adding food expiration dates into a mobile app is tedious and time intensive.</b> The goal of this project was to improve this process so that users would have a more enjoyable and reliable experience inputting and managing food expiration dates. While promoting sustainability!</p>
 			</div>
 		</div>
 
@@ -119,10 +119,10 @@
 
 		<div class="row">
 			<div class="col-sm-6">
-				<p>I began to tackle this project by first <span> conducting competitive analysis in order to understand how other mobile food tracking apps approach inputting food expiration dates</span>.</p>
+				<p>I began to tackle this project by first <b> conducting competitive analysis in order to understand how other mobile food tracking apps approach inputting food expiration dates</b>.</p>
 			</div>
 			<div class="col-sm-6">
-				<p>Additionally, I interviewed Cal undergraduate students regarding their grocery shopping experience. I wanted to analyze how students living in both dormitories and apartments <span> approached the entire food experience from grocery shopping, unpacking groceries, cooking, and discarding old produce</span>.</p>
+				<p>Additionally, I interviewed Cal undergraduate students regarding their grocery shopping experience. I wanted to analyze how students living in both dormitories and apartments <b> approached the entire food experience from grocery shopping, unpacking groceries, cooking, and discarding old produce</b>.</p>
 			</div>
 		</div>
 
@@ -132,60 +132,125 @@
 			</div>
 		</div>
 
+		<div class="row">
+			<div class="col-sm-12">
+				<p>From both user research and through competitive analysis, I established the following key ideas that guided both my team's construction of the mobile app and my design process.</p>
 
-
-		<!-- <h3>Research ==> Competitive Analysis </h3>
-		<p>Current apps on the App store and Playstore have bad UI, are not specific to food expiration and require a manual add for each item. This inhibits user use as one has to individually add the name and expiration date for each food.</p>
-		<p> Look at what we did in the slidedeck</p>
-
-		<h3>Narrowing Project Scope</h3>
-		<p> Based on competitors ==> decided on direction for the mobile app. As the most widespread issue with the user experience being the tedious process of having to add each individual food item, and considering limited time (1 month) and resources (lack of API), my team decided to focus on developing receipt scanning and exploring the experience of scannign receipts and automatically inputting those food items.</p>
-
-		<h3>Sketches</h3>
-
-		<h3>Wireframes</h3>
-
-		<h3>Marketing and Branding</h3>
-
-
-		<h3>Takeaways</h3>
-		<p> Have to take into account when we make mistakes, need to be able to edit these
- -->
-
-		<!-- WORKING FROM HERE -->
-
-
-
-		<!-- <div class="row">
-
-			<div class="col-md-6">
-				<h3>Ideas</h3>
-				<p>My solution to this problem was to create an app that allowed a person to scan their receipts after going grocery shopping. This would add the foods purchased to a personal database where users could add expiration dates. Near the expiration date, users receive alert notifications telling them that a certain product will expire in the hope that they use the item before that date.</p>
-
-				<p>In order to be more user friendly than our competitors, our Preserve team decided to make the app scan receipts and use smart predictions. This means that not only would the user not have to type in the names of items, but also the expiration dates for repeated items would be automatically added based on prior entries. This, combined with a simple and intuitive design would make our app more popular than others.</p>
-
+				<ul>
+					<li>Students live with multiple people, ranging from 4 to 5 other students in their apartment. As a result, refridgerators are easily crowded and older foods get pushed to the back and forgotten in the process.</li>
+					<p></p>
+					<li>There is no physical method that many users use to track their expiration dates. Instead they rely on memory. However, as I learned in <i>The Design of Everyday Things</i> by Don Norman, expiration dates are likely stored in short term memory as it is currently being used. <b>However, this type of information is for everyday tasks that span longer periods, rending our working memory inefficient for remembering food expiration dates</b>.</li>
+					<p></p>
+					<li>All other food expiration tracking services <b>require users to manually add each individual food item in order to receive timely notifications</b>. This includes both the name of the item and the corresponding time the item expires.</li>
+				</ul>
 			</div>
-
 		</div>
- -->
+
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Ideation</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6">
+				<p>The design implication of these insights is to put the knowledge, in this case the food expiration dates, into the world. This removes the need for users to keep this information in their head, while making people more accurate. At the same time, people need to be reminded at the correct time, otherwise the stored information is not useful.</p>
+			</div>
+			<div class="col-sm-6">
+				<p>The major design deirections that I considered were <b>expediting the food expiration input process, using a food expiration API to create smart notifications, and creating an interface that clearly showcases the items the user wants to see</b>.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<p>At this point in the process, some of the challenges that my team ran into were:</p>
+				<ol>
+					<li>We were unable to find a usable food expiration API. Without this resource, how should we collect expiration dates of items without making the user input the date each time? How do we create smart predictions?</li>
+					<p></p>
+					<li>Should there be receipt scanning in the food collection process, and what would that experience be like? How would users edit text if the OCR technology failed?</li>
+					<p></p>
+					<li>Off of the last point, how do we handle unstandardized conventions of writing food items on receipts? Does this affect the scanning?</li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Narrowing Project Scope</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<p>Based on our competitors and the feasibility of certain features, our team decided on the direction for the Preserve mobile app. <b>As the most widespread issue with the user experience was tediously adding each individual food item, we decided to implement receipt scanning and explore the experience of scanning receipts and automatically adding those food items</b>.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Sketches</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<p>Beginning work on the main screen of the app, I sketched out different ways of organizing food items based on their attributes - name, expiration date, category, and storage location.</p>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-sm-12">
+				<img class="img-responsive" src="preserve/lowfi2.png" alt="lowfi">
+				<i><span>Initial sketches for fridge screens and incorporation of features.</span></i>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<p>While working on these sketches, I aimed to address the issues I found during the research process. <b> I worked to make deleting food items at once easy and intuitive, food items and expiration dates more apparent, and detailed various ways to organize and display the information to make the food items that were going to expire noticeable.</b></p>
+			</div>
+		</div>
+
+
+
+
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Wireframes & Mockups</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<img class="img-responsive" src="preserve/hifi1_2.png" alt="hifi">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Branding</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Reflections</h3>
+			</div>
+		</div>
+
+
+
+
+
+
+
+		<!-- <p> Have to take into account when we make mistakes, need to be able to edit these</p> -->
 
 		<!-- <div class="row">
-			<div class="col-md-4">
-				<h3>Process</h3> -->
-				<!-- Wireframes, lowfi, hifi designs -->
-				<!-- Solutions in application (visual) hifi!! -->
-				<!-- <p>The first step in making our app was to determine what features we wanted to include and how they would be organized within the app. My team decided that we would have different storing areas such as the fridge and the pantry to keep track of where each item is stored. To easily manage user information, we used Firebase so we needed a login and sign up screen. Next, we would need some sort of button to take us from the main screen, the fridge, to the camera to scan receipts. I incorporated an intermediate screen to edit names and dates after scanning. Below is a wireframe/lowfi design of our app as well as our first hifi design.</p>
-
-			</div>
 
 			<div class="col-md-4">
-				<img class="img-responsive" src="preserve/lowfi.png" alt="lowfi">
-				<p></p>
-				<img class="img-responsive" src="preserve/hifi1.png" alt="hifi">
-			</div>
-
-			<div class="col-md-4">
-				<p> Our final design, show below, is an iteration of our first design. One of the key issues that we had to handle was to figure out whether the add button would bring the user to an individual add or the receipt scan. We decided on having the add button go to the receipt scan, and being to able to individually add a food on the editable page. Secondly, we eliminated the various places a food could be placed and instead had one main list. We incorporated editing directly from the main screen with a pop up, as well as a widget to more easily view each food item without having to open up the app. We also got rid of the shopping list because it was out of scope for this project.</p>
+				
 			</div>
 
 		</div>
@@ -195,10 +260,7 @@
 				<img class="img-responsive" src="preserve/hifi2.png" alt="hifi">
 			</div>
 
-			<div class="col-md-6">
-				<p>After creating the designs and finishing the app, our team had to decide on a logo. I was charged with logo design so I came up with some ideas ranging from a fridge handle, ice cubes and various fruits and vegetables. Overall, our team liked the color combination purple and green so we picked a food that went with that scheme. While originally, I had played around with using an eggplant; ultimately, we decided on grapes because of the color and vibrancy. It was more appropriate. The main decision was choosing between symmetrical or asymmetrical grapes. Finally, with the desired object made, I created the logo using Material Design specifications such as having a shadow in the back and clean colors.</p>
-				<img class="img-responsive" src="preserve/logo.png" alt="logo">
-			</div> -->
+		 -->
 
 		<!-- </div> -->
 
