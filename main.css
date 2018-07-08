@@ -322,6 +322,12 @@ p {
 # Responsive
 --------------------------------------------------------------*/
 
+@media (max-width: 991px) {
+  .column-margin {
+    margin: 15px 0;
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .left, .main, .right {

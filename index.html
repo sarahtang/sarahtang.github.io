@@ -53,6 +53,38 @@ make it clearer!!, add text blocks?-->
 </head>
 
 <body>
+
+	<!-- Does this script make no hover for mobile? -->
+	<script>
+		function hasTouch() {
+		    return 'ontouchstart' in document.documentElement
+		           || navigator.maxTouchPoints > 0
+		           || navigator.msMaxTouchPoints > 0;
+		}
+
+		if (hasTouch()) { // remove all :hover stylesheets
+		    try { // prevent exception on browsers not supporting DOM styleSheets properly
+		        for (var si in document.styleSheets) {
+		            var styleSheet = document.styleSheets[si];
+		            if (!styleSheet.rules) continue;
+
+		            for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+		                if (!styleSheet.rules[ri].selectorText) continue;
+
+		                if (styleSheet.rules[ri].selectorText.match(':hover')) {
+		                    styleSheet.deleteRule(ri);
+		                }
+		            }
+		        }
+		    } catch (ex) {}
+		}
+
+	</script>
+
+
+
+
+
 	<!-- Parallax -->
 	<!-- <div class="parallax"> -->
 	<!-- Outside container = full screen -->
@@ -117,7 +149,7 @@ make it clearer!!, add text blocks?-->
 
 			<!-- CTR -->
   			<div class="col-sm-4">
-				<div class="img-work">
+				<div class="img-work column-margin">
 					<a href="projects/ctr.html">
 						<img class="img-responsive" src="projects/ctr/ctr.png" alt="ctr">
 					</a>
@@ -131,7 +163,7 @@ make it clearer!!, add text blocks?-->
 			
 			<!-- Aux -->
 			<div class="col-sm-4">
-				<div class="img-work">
+				<div class="img-work column-margin">
 					<!-- projects/aux.html -->
 					<a>
 						<img class="img-responsive" src="projects/aux/aux_hifi2.png" alt="Aux">
@@ -147,7 +179,7 @@ make it clearer!!, add text blocks?-->
 
 			<!-- Assassins -->
   			<div class="col-sm-4">
-				<div class="img-work">
+				<div class="img-work column-margin">
 					<a>
 						<img class="img-responsive" src="projects/assassins/assassins.png" alt="assassins">
 					</a>
@@ -166,7 +198,7 @@ make it clearer!!, add text blocks?-->
 
 			<!-- Switchboard -->
 			<div class="col-sm-6">
-				<div class="img-work">
+				<div class="img-work column-margin">
 					<a>
 						<img class="img-responsive" src="projects/switchboard/switchboard.png" alt="Switchboard">
 					</a>
@@ -179,7 +211,7 @@ make it clearer!!, add text blocks?-->
 
 			<!-- PReSerVE -->
   			<div class="col-sm-6">
-				<div class="img-work">
+				<div class="img-work column-margin">
 					<a href="projects/preserve.html">
 						<img class="img-responsive" src="projects/preserve/preserve.png" alt="Preserve">
 					</a>
@@ -199,7 +231,7 @@ make it clearer!!, add text blocks?-->
 
 			<!-- Sudsy Laundry -->
 			<div class="col-sm-4">
-				<div class="img-work">
+				<div class="img-work column-margin">
 					<a>
 						<img class="img-responsive" src="projects/laundry/laundry.png">
 					</a>
@@ -214,7 +246,7 @@ make it clearer!!, add text blocks?-->
 
 			<!-- MDBUILDS -->
   			<div class="col-sm-4">
-				<div class="img-work">
+				<div class="img-work column-margin">
 					<a>
 					<!-- <a href="projects/mdbuilds.html"> -->
 						<img class="img-responsive" src="projects/mdbuilds/mdb2.png" alt="mdb">
@@ -231,7 +263,7 @@ make it clearer!!, add text blocks?-->
 
 			<div class="col-sm-4">
 				<!-- Graphic Design Illustrations -->
-				<div class="img-work">
+				<div class="img-work column-margin">
 					<a href="projects/mood.html"><img class="img-responsive" src="projects/moodboard/movieposters.png" alt="food"></a>
 				</div>
 				<div class="text-block">
