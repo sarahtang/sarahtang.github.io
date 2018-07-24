@@ -40,6 +40,33 @@ p {
   font-family: 'Roboto', sans-serif !important;
 }
 
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+ul.topnav li {
+  display: inline;
+  float: left;
+  font-family: 'Sansita', sans-serif !important;
+  font-size: 18pt;
+}
+
+ul.topnav li a {
+  padding: 14px 16px;
+  color: teal;
+}
+
+ul.topnav li.right {
+  float: right;
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 16px;
+  
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -88,11 +115,14 @@ p {
 --------------------------------------------------------------*/
 
 #intro {
-  padding-top: 50px;
+  padding-top: 30px;
   /*padding-left: 80px;*/
   /*padding-right: 80px;*/
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 50px;
+  /*background-color: #e5f2f2;*/
+  /*teal #007F7F*/
 }
 
 #intro h1 {
@@ -254,6 +284,57 @@ p {
   /*max-height: 75%*/
 }
 
+/*--------------------------------------------------------------
+# Project Write-up
+--------------------------------------------------------------*/
+#project {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#project p {
+  line-height: 20px;
+}
+
+#project span {
+  font-size: 12px;
+}
+
+#project hr {
+  /*This creates a line*/
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 3px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Switchboard
+--------------------------------------------------------------*/
+#switchboard {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#switchboard p {
+  line-height: 20px;
+}
+
+#switchboard span {
+  font-size: 12px;
+}
+
+#switchboard hr {
+  /*This creates a line*/
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 3px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
 
 
 /*--------------------------------------------------------------
@@ -336,7 +417,7 @@ p {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 540px) {
     .left, .main, .right {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
