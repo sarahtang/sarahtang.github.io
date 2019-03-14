@@ -281,6 +281,14 @@ ul.topnav li.right {
   transform: scale(1.01) rotate(2deg);
 }
 
+.img-no-hov {
+  padding: 12px;
+  border-style: solid;
+  border-spacing: 1px;
+  border-color: teal;
+  border-width: 2px;
+}
+
 
 .text-block {
   position: absolute;
