@@ -224,6 +224,16 @@ ul.topnav li.right {
   /*color: white;*/
 }
 
+#intro h3 {
+  font-weight: 500;
+  font-size: 35px;
+}
+
+#intro h6 {
+  font-size: 25px;
+  max-width: 600px
+}
+
 #intro p {
   font-family: 'Roboto', sans-serif !important; 
   /*color: white;*/
@@ -238,6 +248,11 @@ ul.topnav li.right {
   padding-right: 5%;
   padding-top: 20px;
   padding-bottom: 0px;
+}
+
+.row-no-pad {
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 /*.img {
