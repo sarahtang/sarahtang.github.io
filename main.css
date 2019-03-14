@@ -230,8 +230,9 @@ ul.topnav li.right {
 }
 
 #intro h6 {
+  font-family: 'Source Sans Pro', sans-serif !important;
   font-size: 25px;
-  max-width: 600px
+  max-width: 600px;
 }
 
 #intro p {
