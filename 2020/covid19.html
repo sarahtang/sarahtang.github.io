@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141791352-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-141791352-1');
+	</script>
+	
+	<title>Covid-19 Data Analysis Workflow</title>
+
+
+	<link rel="stylesheet" href="../main.css">
+	<link rel="icon" type="image/png" href="icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Open+Sans:300" rel="stylesheet">
+
+	<!-- BOOTSTRAP -->
+	<meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- BOOTSTRAP -->
+
+</head>
+
+
+<body>
+	<!-- Navigation Bar -->
+	<div class="container">
+		<ul class="topnav">
+			<li class="sarah"><a href="../index.html">Sarah Tang</a></li>
+			<li class="right"><a href="../about.html">About</a></li>
+			<li class="right"><a href="../index.html">Work</a></li>
+		</ul>
+		<hr>
+	</div>
+
+	<div class="container">
+	<section id="preserve">
+
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Covid-19 Data Analysis Workflow</h1>
+				<h4>Analyzing covid-19 trends up to April 2020 to predict viral growth</h4>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-3 col-xs-6">
+				<h4>Category</h4>
+				<p>EDA + Linear Modeling</p>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<h4>Date</h4>
+				<p>May 2020</p>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<h4>Github</h4>
+				<p><a href="https://github.com/sarahtang/covid19" target="_blank">https://github.com/sarahtang/covid19</a></p>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Abstract</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<p>This analysis examines covid-19 data to determine the growth of the virus in the United States across various states and counties. Here I utilize datasets of confirmed covid-19 cases and deaths alongside information about county demographics and state testing to predict the number of new covid-19 cases on a given day per county and to predict the number of total deaths per state. This analysis found that historical trends are important to understand the future number of covid-19 cases and that number of deaths, predicted off of number of people tested and confirmed cases, is a better indicator of the growth of covid-19 than the number of confirmed cases because of testing biases. Future research will examine percent change over time and incorporate more detailed hospitalization data to form a clearer picture of the covid- 19 crisis.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Introduction</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<p>This analysis focuses on exploring and analyzing covid-19 data to determine the impact of the virus in the United States by identifying informative variables through EDA and using sklearn to build more complex linear models. Here, I examine cumulative and additional cases by state and percent change of cases to predict the number of covid-19 cases on 4/18/20 for each county and I analyze biases in the data before predicting total number of deaths per state. The main questions asked are:</p>
+				<b>
+				<ol>
+					<li>Can we predict the number of new corona cases? What features impact corona virus growth? Specifically, why did New York experience such a high number of cases?</li>
+					<li>What factors contribute to total number of deaths per state?</li>
+				</ol>
+				</b>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Data</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<p>The state dataset consists of 140 records of various states and provinces around the world and includes information regarding the number of confirmed cases, deaths, people hospitalized, people tested, etc. as of 4/18/20. The dataset has 18 features.</p>
+				<p>The covid_confirmed and covid_deaths datasets contain 3,255 records, one for each county in the United States and include the cumulative number of covid-19 confirmed cases and deaths respectively by county from 1/22/20 until 4/18/20. The confirmed cases dataset has a total of 99 features while the covid-19 deaths dataset has a total of 100 features.</p>
+				<p>The abridged counties dataset has 3244 records for the counties in the United States and has 87 features including information about the demographics of a specific county (population total, ages, poverty, mortality rates, health issues) as well as information on lockdown dates and social distancing.</p>
+				<p>The last dataset used is the daily dataset, which has 3769 records and 27 features. This dataset provides daily information for each state about positive and negative cases, hospitalization, the number of people in the ICU or using a ventilator, and the amount of testing.</p>
+			</div>
+		</div>
+
+		
+
+		<!-- <div class="row">
+			<div class="col-sm-12">
+				<p>As part of my summer internship work, I was thrown into the midst of a busy startup trying to improve not only its visual brand to other businesses but also its <b>developer portal, the means for developers to interact with Trusted Key's technologies</b>. As Trusted Key expanded, our goal was to create an easy to use and intuitive website that allowed users to understand the Trusted Key API and to skim the documentation, and to easily manage their Relying Party apps.</p>
+
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-6">
+				<img class="img-responsive" src="trustedkey/old_landing.jpg" alt="Old landing page">
+				<i><span>Previous landing page</span></i>
+				<p></p>
+			</div>
+			<div class="col-md-6">
+				<img class="img-responsive" src="trustedkey/old_portal.jpg" alt="Old portal page">
+				<i><span>Previous developer portal design</span></i>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Research and Competitor Analysis & Ideation</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<img class="img-responsive" src="trustedkey/tk1.png" alt="tk1">
+				<i><span>Initial research, heuristic & UI/UX analysis and competitor analysis</span></i>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<img class="img-responsive" src="trustedkey/tk4.png" alt="tk4">
+				<i><span>Ideation and low-fidelity landing page mockups</span></i>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Wireframes and Lo-Fi Mockups</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<img class="img-responsive" src="trustedkey/tk6.png" alt="tk6">
+				<i><span>Wireframes and flows & lo/medium-fidelity mockups</span></i>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Final Product</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<img class="img-responsive" src="trustedkey/tk-final@2x.png" alt="final">
+				<i><span>Final implementation on the Trusted Key Developer page</span></i>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Reflections</h3>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-sm-12">
+				<p>I had a blast this summer! Huge shoutout to my mentor, Keith Kowal, and fellow intern Fang Shuo Deng for making this summer a great learning experience. Also big thanks to Krishnan Rajiyah and Alvin Verenkar for fun work lunches all summer long. Lastly, thanks to Prakash Sundaresan and Amit Jasuja for being such great bosses and providing great career advice!</p>
+			</div>
+		</div> -->
+
+
+
+
+		<div class="row">
+
+
+		</div>
+
+
+	</section>
+	</div>
+
+
+</body>
+
+
+<!-- FOOTER -->
+<footer>
+	<div class="container">
+	<div class="footer">
+		<!-- Line -->
+		<hr>
+		<!-- Hyperlinks -->
+		<div class="hyperlinks">
+			<a href="../index.html"> Work </a>
+			<span>
+			<a href="../about.html"> About</a>
+			</span>
+		</div>
+
+		<p> Designed and <a href="https://github.com/sarahtang/sarahtang.github.io" target="_blank"> built </a> by Sarah Tang © 2021 </p>
+
+	</div>
+	</div>
+</footer>
+
+
+</html>
